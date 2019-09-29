@@ -50,7 +50,9 @@ def cache_url(url_or_file, cache_dir):
     if not is_url:
         return url_or_file
 
+
     url = url_or_file
+    print("**************satish*******url is :", url)
     assert url.startswith(_DETECTRON_S3_BASE_URL), \
         ('Detectron only automatically caches URLs in the Detectron S3 '
          'bucket: {}').format(_DETECTRON_S3_BASE_URL)
